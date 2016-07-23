@@ -1,0 +1,151 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 90px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+#flash-notify {
+  display: none;
+}
+
+/*a*/
+a {
+  -webkit-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/*Forums*/
+.forumhead {
+  padding: 10px;
+  margin: 10px;
+  /*border: 2px solid #5a7f97;*/
+  border: 2px solid #DDD;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.forumhead h2 {
+  margin-top: 2px;
+}
+
+.forumhead th {
+  background-color: #ddd;
+}
+
+.forums-fade,
+.search-fade {
+  cursor: pointer;
+}
+
+/*Forum category*/
+.category-head {
+  text-align: center;
+  color: white;
+  min-height: 220px;
+  padding-top: 60px;
+  padding-bottom: 4px;
+}
+
+.category-head h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 12px;
+  padding-bottom: 0px;
+}
+
+.category-head h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0px;
+  padding-bottom: 8px;
+}
+
+/*Navbar*/
+.navbar.navbar-default {
+  margin-bottom: 26px;
+  border-radius: 0;
+}
+
+.nav-badge-danger {
+  background-color: #DA534F;
+}
+
+/*Article*/
+img.article-image {
+  float:left; /* Выравнивание по левому краю */
+  margin: 0 7px 7px 0; /* Отступы вокруг картинки */
+  width: 100px;
+}
+
+img.article-images {
+  width: 100px;
+}
+
+/*Chat*/
+/*.messages-area {*/
+.messages {
+  overflow-y: scroll;
+  /*overflow-x: hidden;*/
+  /*overflow: auto;*/
+  max-height: 550px;
+  height: 600px;
+  /*max-width: 150px;*/
+}
+.messages {
+  /*border-right: 2px solid grey;*/
+}
+
+ul.messages {
+  list-style: none;
+  padding-left: 0;
+}
+
+.chat-users-list {
+  /*list-style: none;*/
+  padding-left: 0;
+}
+
+#smiles-choice {
+  display: none;
+  position: absolute;
+  background: #fff;
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #eee;
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#smiles-choice span {
+  cursor: pointer;
+}
+
+#chat-voice {
+  cursor: pointer;
+}

@@ -1,0 +1,130 @@
+TODO:
+steam history
+chat
+
+#MySQL
+
+users
+-id
+-role_id
+-name
+-email
+-password
+-remember_token
+-avatar
+-status (inactive, active, banned, deleted) default active
+-user_status
+-caption
+-token
+-karma
+-ip
+-steam varchar
+-sex tinyint(0, 1)
+-created_at
+-updated_at
+
+roles
+-id
+-name (admin, moderator, member)
+
+friends
+-id
+-user_id
+-friend_id
+-is_confirm tinyint(0, 1)
+-type tinyint(0, 1)
+-created_at
+-updated_at
+
+messages
+-id
+-user_id
+-receiver_id
+-is_read tinyint(0, 1)
+-body text
+-created_at
+-updated_at
+
+forums
+-id
+-title varchar
+-slug varchar
+-description varchar
+-position int
+-is_visible tinyint(0, 1)
+
+forum_role
+-forum_id
+-role_id
+
+categories
+-id
+-forum_id
+-title varchar
+-slug varchar
+-description varchar
+-position int
+-is_visible tinyint(0, 1)
+// -background_color varchar
+
+category_role
+-category_id
+-role_id
+
+category_user // category moderators
+-category_id
+-user_id
+
+posts
+-id
+-category_id
+-author (user_id)
+-moderator (user_id) nullable // последний кто модерировал пост
+-answer (comment_id)
+-title varchar
+-slug varchar
+-body varchar
+-file varchar
+-is_visible tinyint(0, 1)
+-is_sticky tinyint(0, 1)
+-is_closed tinyint(0, 1)
+// -background_color varchar
+-views int unsigned
+-created_at
+-updated_at
+
+comments
+-id
+-post_id
+-author (user_id)
+-moderator (user_id) nullable // последний кто модерировал comment
+-body varchar
+-file varchar
+-is_visible tinyint(0, 1)
+-created_at
+-updated_at
+
+banneds
+-id
+-admin (user_id)
+-user_id
+-started_at  timestamp  default 0000-00-00 00:00:00
+-ended_at    timestamp  default 0000-00-00 00:00:00
+
+events
+-id
+-name
+
+logs
+-id
+-event_id
+-user_id
+-created_at
+-updated_at
+
+deals
+-id
+-task_id
+-price
+
+
